@@ -1,7 +1,9 @@
 import Intro from "@/components/Intro";
+import Services from "@/components/Services";
 import Head from "next/head";
+import { data } from "./../data";
 
-export default function Home() {
+export default function Home({ services }) {
   return (
     <div>
       <Head>
@@ -10,6 +12,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Intro />
+      <Services services={services} />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const services = data;
+  return {
+    props: {
+      services,
+    },
+  };
 }
