@@ -37,7 +37,7 @@ const Services = ({ services }) => {
                     height="100%"
                     layout="responsive"
                     objectFit="cover"
-                    className="w-36 h-36 rounded-full"
+                    className="w-40 h-36 rounded-full"
                   />
                 )}
               </div>
