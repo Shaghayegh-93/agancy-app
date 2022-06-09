@@ -1,9 +1,13 @@
 import Intro from "@/components/Intro";
 import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
 import Head from "next/head";
-import { data } from "./../data";
+import { data, users } from "./../data";
 
-export default function Home({ services }) {
+export default function Home({ services, usersItem }) {
+  // console.log("users:", users);
+  // console.log("services:", services);
+  console.log("usersItem:", usersItem);
   return (
     <div>
       <Head>
@@ -13,15 +17,20 @@ export default function Home({ services }) {
       </Head>
       <Intro />
       <Services services={services} />
+      <Testimonials usersItem={usersItem} />
     </div>
   );
 }
 
 export async function getStaticProps() {
   const services = data;
+  const usersItem = users;
+
+  console.log("usersItem:", usersItem);
   return {
     props: {
       services,
+      usersItem,
     },
   };
 }
