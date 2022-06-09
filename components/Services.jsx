@@ -5,29 +5,33 @@ import Image from "next/image";
 const Services = ({ services }) => {
   return (
     <div className=" px-[100px]">
-      <h2 className=" text-2xl font-bold border-b-2  border-green-700 w-52 mb-3  ">
+      <h2 className=" text-3xl font-bold border-b-4  border-green-700 w-max mb-3  ">
         What We Can Do?
       </h2>
-      <h3 className="text-5xl font-semibold text-green-700">
+      <h3 className="text-5xl font-semibold text-green-700 mb-7">
         Services we can help you with
       </h3>
-      <div className="flex items-center justify-between">
+      <div className=" flex flex-wrap justify-between">
         {services.map((service) => (
-          <Link
-            className=" flex items-center justify-between"
-            passHref
-            key={service.id}
-            href="/"
-          >
-            <div className=" bg-slate-300 p-9">
-              <span>{service.title}</span>
-              <div className=" ">
+          <Link className=" " passHref key={service.id} href="/">
+            <div className="w-[400px] h-[400px] bg-slate-100 flex items-center justify-center p-[10px] mb-[50px] relative cursor-pointer group ">
+              <div className="hidden group-hover:flex items-center justify-center bg-slate-200 absolute z-30 w-[70%]  text-center p-5 opacity-50 rounded-lg ">
+                {service.desc}
+              </div>
+              <span className="absolute top-[10px] left-[10px] font-light tracking-[5px] text-slate-500">
+                {service.title}
+              </span>
+              <div className=" w-[85%] h-[85%] overflow-hidden rounded-full group-hover:scale-110 transition-all duration-1000 ease-in-out">
                 {service.video ? (
                   <video
                     src={`/img/${service.video}`}
                     autoPlay
                     loop
-                    className="w-36 h-36 rounded-full"
+                    muted
+                    // className=" rounded-full w-full h-full"
+                    width="100%"
+                    height="100%"
+                    objectFit="cover"
                   />
                 ) : (
                   <Image
@@ -37,7 +41,7 @@ const Services = ({ services }) => {
                     height="100%"
                     layout="responsive"
                     objectFit="cover"
-                    className="w-40 h-36 rounded-full"
+                    // className=" rounded-full w-full h-full"
                   />
                 )}
               </div>
