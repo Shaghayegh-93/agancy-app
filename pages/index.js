@@ -25,8 +25,6 @@ export default function Home({ services, usersItem }) {
 export async function getStaticProps() {
   const services = data;
   const usersItem = users;
-
-  console.log("usersItem:", usersItem);
   return {
     props: {
       services,
