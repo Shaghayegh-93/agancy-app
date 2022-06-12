@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .imgContainer:nth-child(3) span {
+    border-top-right-radius: 50%;
+  }
+}
