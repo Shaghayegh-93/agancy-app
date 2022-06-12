@@ -10,27 +10,27 @@ const Navbar = () => {
         {/* righySide */}
         <ul className="flex">
           <li className="mr-[30px] text-sm text-gray-200 cursor-pointer">
-            <Link href="/">
+            <Link href="/products/design">
               <a>DESIGN</a>
             </Link>
           </li>
           <li className="mr-[30px] text-sm text-gray-200 cursor-pointer">
-            <Link href="/">
+            <Link href="/products/development">
               <a>DEVELOPMENT</a>
             </Link>
           </li>
           <li className="mr-[30px] text-sm text-gray-200 cursor-pointer">
-            <Link href="/">
+            <Link href="/products/production">
               <a>PRODUCTION</a>
             </Link>
           </li>
           <li className="mr-[30px] text-sm text-gray-200 cursor-pointer">
-            <Link href="/">
+            <Link href="/products/photography">
               <a>PHOTOGRAPHY</a>
             </Link>
           </li>
           <li className="mr-[30px] text-sm text-gray-200 cursor-pointer">
-            <Link href="/">
+            <Link href="/contact">
               <a>CONTACT</a>
             </Link>
           </li>
