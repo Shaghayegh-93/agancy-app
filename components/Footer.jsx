@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex justify-around text-lg p-[50px] items-center h-[250px] border-t-[3px] border-black">
+    <div className="flex justify-around text-lg p-[50px] items-center h-auto md:h-[250px] flex-col md:flex-row border-t-[3px] border-black">
       <div className="flex-[2_2_0%]">
         <h2 className="text-green-700 bg-green-100 font-normal p-[5px] text-xl flex items-center justify-center tracking-wide w-max">
           AV0CAD0 CREATIVES.
@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex-1 text-sm ">
+      <div className="flex-1 text-sm mt-8 md:mt-0">
         <p className="mb-5">
           12 ADAM STREET NY <br />
           USA
