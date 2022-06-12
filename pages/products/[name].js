@@ -6,23 +6,19 @@ import { data } from "../../data";
 
 const Product = ({ product }) => {
   return (
-    <div className="grid grid-cols-3  px-[50px] py-[120px] ">
-      <div className="grid gap-2 grid-cols-3 col-span-2 mr-8 ">
+    <div className="flex  px-[50px] py-[120px] ">
+      <div className=" flex flex-wrap flex-[2-2-0%] ">
         {product.images.map((img) => (
-          <div className="imgContainer " key={img.id}>
-            <Image
-              alt=""
-              src={img.url}
-              width="230%"
-              height="200%"
-              objectFit="responsive"
-              //   layout="fill"
-            />
+          <div
+            className="imgContainer w-[30%] h-[30%] m-[10px] relative overflow-hidden  "
+            key={img.id}
+          >
+            <img alt="" src={img.url} className="w-full h-full" />
           </div>
         ))}
       </div>
       <div>
-        <div className="mt-16">
+        <div className=" flex-1">
           <h2 className="font-bold mb-5 text-5xl">{product.title}</h2>
           <p className="mb-8">{product.longDesc}</p>
           <button
