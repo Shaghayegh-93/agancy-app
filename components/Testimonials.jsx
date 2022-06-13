@@ -10,7 +10,7 @@ const Testimonials = ({ usersItem }) => {
         Testimonilas
       </h2>
 
-      <div className="flex flex-col md:flex-row mt-[120px] items-center space-around flex-wrap">
+      <div className="flex flex-col md:flex-row mt-[120px]  items-center space-around flex-wrap">
         {usersItem.map((user) => (
           <div
             key={user.id}
