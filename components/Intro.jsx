@@ -17,7 +17,9 @@ const Intro = () => {
           Create live segments and target the right people for messages based on
           their behaviors.
         </p>
-        <button className="p-[10px] bg-green-700 rounded-md">Discover</button>
+        <button className="p-[10px] bg-green-700 rounded-md text-white">
+          Discover
+        </button>
       </div>
       {/* rightSide */}
       <div className="flex-1 relative p-[50px]  md:p-[100px] items-center justify-center text-center md:pr-0 ">
