@@ -53,10 +53,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  //   console.log("🚀 context", context);
   const name = context.params.name;
   const product = data.filter((item) => item.name === name)[0];
-  //   console.log("product:", product);
   return {
     props: {
       product,
