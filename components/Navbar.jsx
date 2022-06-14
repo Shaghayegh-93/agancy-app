@@ -3,7 +3,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = ({ open, menuHandler }) => {
-  console.log("open: ", open);
   return (
     <nav className=" ">
       <div className="bg-black text-white flex items-center  justify-between h-[50px] px-5  md:px-[100px] relative">
@@ -52,7 +51,7 @@ const Navbar = ({ open, menuHandler }) => {
         <ul
           className=" fixed h-[calc(100vh-50px)] w-[50vw] bg-black top-[50px] font-bold text-gray-300 flex flex-col items-center justify-around z-10 transition-all duration-1000 peer-checked:right-[-50vw] md:hidden right-0
            "
-          style={{ right: !open ? "0" : "-50vw" }}
+          style={{ right: !open ? "-50vw" : "0" }}
         >
           <li className=" text-sm text-gray-200 cursor-pointer w-full text-center">
             <Link href="/products/design">
@@ -62,22 +61,22 @@ const Navbar = ({ open, menuHandler }) => {
           </li>
           <li className=" text-sm text-gray-200 cursor-pointer">
             <Link href="/products/development">
-              <a>DEVELOPMENT</a>
+              <a onClick={menuHandler}>DEVELOPMENT</a>
             </Link>
           </li>
           <li className=" text-sm text-gray-200 cursor-pointer">
             <Link href="/products/production">
-              <a>PRODUCTION</a>
+              <a onClick={menuHandler}>PRODUCTION</a>
             </Link>
           </li>
           <li className=" text-sm text-gray-200 cursor-pointer">
             <Link href="/products/photography">
-              <a>PHOTOGRAPHY</a>
+              <a onClick={menuHandler}>PHOTOGRAPHY</a>
             </Link>
           </li>
           <li className=" text-sm text-gray-200 cursor-pointer">
             <Link href="/contact">
-              <a>CONTACT</a>
+              <a onClick={menuHandler}>CONTACT</a>
             </Link>
           </li>
         </ul>
