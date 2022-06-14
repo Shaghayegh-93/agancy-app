@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 import { useState } from "react";
 
 const Layout = ({ children }) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const menuHandler = () => {
-    setOpen(false);
+    setOpen(!open);
   };
   return (
     <div onClick={menuHandler}>
