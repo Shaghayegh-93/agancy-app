@@ -13,13 +13,13 @@ const Intro = () => {
           <span className="text-green-700 mr-2 ">AV0CAD0</span>
           DIGITAL PRODUCT AGANCY
         </h1>
-        <p className="font-normal hidden md:block">
+        <p className="font-bold hidden text-lg md:block md:-mt-48">
           Create live segments and target the right people for messages based on
           their behaviors.
         </p>
-        <button className="p-[10px] bg-green-700 rounded-md text-white">
+        {/* <button className="p-[10px] bg-green-700 rounded-md text-white">
           Discover
-        </button>
+        </button> */}
       </div>
       {/* rightSide */}
       <div className="flex-1 relative p-[50px]  md:p-[100px] items-center justify-center text-center md:pr-0 ">
