@@ -5,7 +5,9 @@
 @layer utilities {
   .imgContainer:nth-child(3) {
     border-top-right-radius: 50%;
+    
   }
+
   /* .wrapper {
     flex-grow: 2;
   } */
