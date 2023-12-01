@@ -10,7 +10,7 @@ const Footer = () => {
           AV0CAD0 CREATIVES.
         </h2>
         <div>
-          <a className="flex mt-5 cursor-pointer">
+          {/* <a className="flex mt-5 cursor-pointer">
             <p className="underline decoration-2 font-bold text-2xl mr-2">
               WORK WITH US
             </p>
@@ -21,7 +21,7 @@ const Footer = () => {
               height="30px"
               objectFit="contain"
             />
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="flex-1 text-sm mt-8 sm:mt-0">
