@@ -1,38 +1,47 @@
-import router from "next/router";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = ({ open, menuHandler }) => {
   return (
     <nav className=" ">
-      <div className="bg-black text-white flex items-center  justify-between h-[50px] px-5  md:px-[100px] relative">
+      <div className="bg-black text-white flex items-center  justify-between h-[50px] px-5  md:px-[100px] ">
         {/* leftSide */}
         <div className="text-lg">AV0CAD0</div>
         {/* righySide */}
-        <ul className="hidden md:flex hover:text-green-800">
-          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer hover:text-green-800">
+        <ul className="hidden md:flex  ">
+          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer relative">
             <Link href="/products/design">
-              <a>DESIGN</a>
+              <a className="  after:content-[''] after:w-full after:h-[2px]  after:bg-green-500 after:absolute after:left-0 after:bottom-[-8px] after:opacity-0 hover:after:opacity-100  ">
+                DESIGN
+              </a>
             </Link>
           </li>
-          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer hover:text-green-800">
+          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer relative ">
             <Link href="/products/development">
-              <a>DEVELOPMENT</a>
+              <a className="  after:content-[''] after:w-full after:h-[2px]  after:bg-green-500 after:absolute after:left-0 after:bottom-[-8px] after:opacity-0 hover:after:opacity-100  ">
+                DEVELOPMENT
+              </a>
             </Link>
           </li>
-          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer hover:text-green-800">
+          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer relative">
             <Link href="/products/production">
-              <a>PRODUCTION</a>
+              <a className="  after:content-[''] after:w-full after:h-[2px]  after:bg-green-500 after:absolute after:left-0 after:bottom-[-8px] after:opacity-0 hover:after:opacity-100  ">
+                PRODUCTION
+              </a>
             </Link>
           </li>
-          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer hover:text-green-800">
+          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer relative ">
             <Link href="/products/photography">
-              <a>PHOTOGRAPHY</a>
+              <a className="  after:content-[''] after:w-full after:h-[2px]  after:bg-green-500 after:absolute after:left-0 after:bottom-[-8px] after:opacity-0 hover:after:opacity-100  ">
+                PHOTOGRAPHY
+              </a>
             </Link>
           </li>
-          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer hover:text-green-800">
+          <li className="mr-[30px] text-sm text-gray-200 cursor-pointer relative ">
             <Link href="/contact">
-              <a>CONTACT</a>
+              <a className="  after:content-[''] after:w-full after:h-[2px]  after:bg-green-500 after:absolute after:left-0 after:bottom-[-8px] after:opacity-0 hover:after:opacity-100  ">
+                CONTACT
+              </a>
             </Link>
           </li>
         </ul>
